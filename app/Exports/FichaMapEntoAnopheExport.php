@@ -1,0 +1,70 @@
+<?php
+
+namespace App\Exports;
+use Maatwebsite\Excel\Concerns\WithHeadings;
+use Maatwebsite\Excel\Concerns\FromCollection;
+use DB;
+
+class FichaMapEntoAnopheExport implements FromCollection,WithHeadings
+{
+    
+    public function collection()
+    {
+        //FICHA_CENSO BIENES CON MANTENIMIENTO Y ESTADO DE LOS MISMOS
+        $id_usuario=0;
+        $simbolo="";
+        if (auth()->user()->is_admin) {
+            $id_usuario=0;
+            $simbolo=">";
+        }else{
+            $id_usuario=auth()->user()->id;
+            $simbolo="=";
+        }
+        $obj=DB::table("mapento_cuadros")
+        ->leftjoin('reds','reds.id','=','mapento_cuadros.Idred')
+        ->leftjoin('microreds','microreds.id','=','mapento_cuadros.Idmicrored')
+        ->leftjoin('provincias','provincias.id','=','mapento_cuadros.IdProvincia')
+        ->leftjoin('distritos','distritos.id','=','mapento_cuadros.IdDistrito')
+        ->leftjoin('users','users.id','=','mapento_cuadros.Usuario')
+        ->leftjoin('localidades','localidades.id','=','mapento_cuadros.idLocalidad')
+        ->leftjoin('mapento_cuadros_especies','mapento_cuadros_especies.idMapento','=','mapento_cuadros.id')
+        ->leftjoin('especies','especies.id','=','mapento_cuadros_especies.idEspecies')
+        ->select(
+        'mapento_cuadros.id as ID_FICHA',
+        'provincias.nombre_provincia AS PROVINCIA',
+        'distritos.nombre_distrito AS DISTRITO',
+        'reds.nombre_red AS RED',
+        'microreds.nombre_microred AS MICRORED',
+        'localidades.nombre_localidad AS LOCALIDAD',
+        'mapento_cuadros_especies.id AS ID_REG_ESPECIES',
+        'mapento_cuadros_especies.tipo_mapeo AS TIPO',
+        'especies.nombre_especie AS NOMBRE_ESPECIE',
+        'mapento_cuadros_especies.cantidad as CANTIDAD',
+        'mapento_cuadros_especies.mes AS MES',
+        'mapento_cuadros_especies.ano AS AÑO',
+        'users.name AS USUARIO')
+        ->where('users.id',$simbolo,$id_usuario)
+        ->where('mapento_cuadros.delete','=',0)
+        ->get();
+        return ($obj);
+    }
+    
+    public function headings(): array
+    {
+        return [
+            'ID_FICHA',
+            'PROVINCIA',
+            'DISTRITO',
+            'RED',
+            'MICRORED',
+            'LOCALIDAD',
+            'ID_REG_ESPECIES',
+            'TIPO',
+            'NOMBRE_ESPECIE',
+            'CANTIDAD',
+            'MES',
+            'AÑO',
+            'USUARIO'
+       ];
+    }
+}
