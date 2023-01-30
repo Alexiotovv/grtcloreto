@@ -3,8 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\ProduccionController;
-
 
 
 Route::get('/', function () {
@@ -14,9 +12,6 @@ Route::get('/', function () {
     return view('cuadro');
 });*/
 //Route::get('/cuadro',[casosController::class, 'casos_covid']);
-
-
-
 
 /////////////////////////////////////////LOGIN AND REGISTER
 Route::get('login',function(){
@@ -32,22 +27,14 @@ Route::get('register',function(){
 })->name('register');
 
 //USUARIOS
-Route::post("register",[UserController::class,'create'])->name('Registro');
-Route::post("verificanombre",[UserController::class,'verificanombre'])->name('verificanombre');
-Route::post("verificaemail",[UserController::class,'verificaemail'])->name('verificaemail');
-Route::post("login",[LoginController::class, 'login']);
-Route::put('login', [LoginController::class, 'logout']);
+// Route::post("register",[UserController::class,'create'])->name('Registro');
+// Route::post("verificanombre",[UserController::class,'verificanombre'])->name('verificanombre');
+// Route::post("verificaemail",[UserController::class,'verificaemail'])->name('verificaemail');
+// Route::post("login",[LoginController::class, 'login']);
+// Route::put('login', [LoginController::class, 'logout']);
 
-Route::get("Usuarios",[UserController::class, "Usuarios"])->name('Usuarios');
-Route::post("ActualizaUsuario",[UserController::class, "ActualizaUsuario"])->name('Actualiza.Usuario');
-Route::get("ListarUsuarios",[UserController::class, "ListarUsuarios"])->name('Listar.Usuarios');
-Route::post("ActualizaContrasena",[UserController::class, "ActualizaContrasena"])->name('Actualiza.Contrasena');
-
-
-/////PRODUCCIÓN
-Route::get("Reportes",[ProduccionController::class, "Reportes"])->name('Produccion.Reportes');
-Route::get("ExportarFichaFamiliarVisitas",[ProduccionController::class, "ExportarFichaFamiliarVisitas"])->name('Exportar.FichaFamiliarVisitas');
-Route::get("ExportarFichaFamiliarMiembros",[ProduccionController::class, "ExportarFichaFamiliarMiembros"])->name('Exportar.FichaFamiliarMiembros');
-
-////END PRODUCTION
+// Route::get("Usuarios",[UserController::class, "Usuarios"])->name('Usuarios');
+// Route::post("ActualizaUsuario",[UserController::class, "ActualizaUsuario"])->name('Actualiza.Usuario');
+// Route::get("ListarUsuarios",[UserController::class, "ListarUsuarios"])->name('Listar.Usuarios');
+// Route::post("ActualizaContrasena",[UserController::class, "ActualizaContrasena"])->name('Actualiza.Contrasena');
 
