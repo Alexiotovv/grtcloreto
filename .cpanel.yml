@@ -2,4 +2,4 @@
   deployment:
     tasks:
       - export DEPLOYPATH=/home/drtcl/web/
-      - /bin/cp web/ $DEPLOYPATH
+      - /bin/cp -R images $DEPLOYPATH
