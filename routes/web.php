@@ -6,12 +6,11 @@ use App\Http\Controllers\UserController;
 
 
 Route::get('/', function () {
-    return view('login');
+    return view('home');
 });
 /*Route::get('/cuadro', function () {
     return view('cuadro');
 });*/
-//Route::get('/cuadro',[casosController::class, 'casos_covid']);
 
 /////////////////////////////////////////LOGIN AND REGISTER
 Route::get('login',function(){
