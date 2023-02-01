@@ -4,4 +4,4 @@
       - export DEPLOYPATH=/home/aywsolutionweli/public_html/pruebagit.aywsolution.com/
       - /bin/rsync -av public/ $DEPLOYPATH
       - export DEPLOYPATH=/home/aywsolutionweli/web2/
-      - /bin/rsync -av $DEPLOYPATH
+      - /bin/rsync -av ./ $DEPLOYPATH
