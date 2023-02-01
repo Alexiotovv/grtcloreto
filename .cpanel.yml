@@ -1,5 +1,5 @@
 ---
   deployment:
     tasks:
-      - export DEPLOYPATH=/home/drtcl/web/
+      - export DEPLOYPATH=/home/aywsolutionweli/web2/
       - /bin/cp -R images $DEPLOYPATH
