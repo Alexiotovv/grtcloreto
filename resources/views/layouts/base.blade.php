@@ -5,7 +5,7 @@
 <!-- Mirrored from mehedi.asiandevelopers.com/demo/rufers/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Jan 2023 20:11:13 GMT -->
 <head>
     <meta charset="UTF-8">
-    <title>Rufers - Responsive HTML 5 Template</title>
+    <title>Gerencia Regional de Transportes y Comunicaciones de Loreto</title>
 
     <!-- responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -56,9 +56,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="32x32" href="assets/images/favicon/logo-favicon.png">
+    <link rel="icon" type="image/png" href="assets/images/favicon/logo-favicon.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/images/favicon/logo-favicon.png" sizes="16x16">
 
     <!-- Fixing Internet Explorer-->
     <!--[if lt IE 9]>
@@ -134,7 +134,7 @@
                         <div class="sidebar-info-contents">
                             <div class="content-inner">
                                 <div class="logo">
-                                    <a href="index-2.html"><img src="assets/images/brand/logo_grtcloreto.png" alt="" /></a>
+                                    <a href="index-2.html"><img src="assets/images/brand/logo_reduced.png" alt=""/></a>
                                 </div>
                                 <div class="content-box">
                                     <h4>About Us</h4>
@@ -211,7 +211,7 @@
         <header class="main-header header-style-one">
             <div class="header-style-one__inner">
                 <div class="main-logo-box">
-                    <a href="index-2.html"><img src="assets/images/brand/logo_grtcloreto.png" alt="" title=""></a>
+                    <a href="index-2.html"><img src="assets/images/brand/logo_reduced.png" alt="" title=""></a>
                 </div>
                 <!--Start Header Top-->
                 <div class="header-style-one__header-content">
@@ -233,7 +233,7 @@
                                                     <span class="flaticon-phone-call-3"></span>
                                                 </div>
                                                 <div class="text">
-                                                    <h6><a href="tel:123456789">+51 999 566 235</a></h6>
+                                                    <h6><a href="tel:123456789">065-260990</a></h6>
                                                 </div>
                                             </li>
                                             <li>
@@ -371,9 +371,9 @@
                                     </div>
                                     <div class="header-right_buttom">
                                         <div class="btns-box">
-                                            <a class="btn-one" href="contact.html">
+                                            <a class="btn-one" href="agendavirtual.grtcloreto.gob.pe">
                                                 <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <span class="txt">Quiero</span>
+                                                <span class="txt">AgendaVirtual</span>
                                             </a>
                                         </div>
                                     </div>
@@ -397,7 +397,7 @@
                         <!--Logo-->
                         <div class="logo float-left">
                             <a href="index-2.html" class="img-responsive"><img
-                                    src="assets/images/brand/logo_grtcloreto.png" alt="" title=""></a>
+                                    src="assets/images/brand/logo_reduced.png" alt="" title=""></a>
                         </div>
                         <!--Right Col-->
                         <div class="right-col float-right">
@@ -458,7 +458,7 @@
                                 </div>
                                 <div class="btns-box">
                                     <a class="btn-one" href="about.html">
-                                        <span class="txt">Read More</span>
+                                        <span class="txt">Leer Más</span>
                                     </a>
                                 </div>
                             </div>
@@ -480,7 +480,7 @@
                                 </div>
                                 <div class="btns-box">
                                     <a class="btn-one" href="about.html">
-                                        <span class="txt">Read More</span>
+                                        <span class="txt">Leer Más</span>
                                     </a>
                                 </div>
                             </div>
@@ -502,7 +502,7 @@
                                 </div>
                                 <div class="btns-box">
                                     <a class="btn-one" href="about.html">
-                                        <span class="txt">Read More</span>
+                                        <span class="txt">Leer Más</span>
                                     </a>
                                 </div>
                             </div>
@@ -522,9 +522,9 @@
             <div class="container">
                 <div class="sec-title center text-center">
                     <div class="sub-title">
-                        <h6><span class="border-left"></span> Our Services <span class="border-right"></span></h6>
+                        <h6><span class="border-left"></span> Proyectos <span class="border-right"></span></h6>
                     </div>
-                    <h2>Superior Roofing Services</h2>
+                    <h2>Proyectos Realizados</h2>
                 </div>
                 <div class="row">
                     <!--Start Single Service Style1-->
@@ -538,14 +538,14 @@
                                     <div class="pattern-bg"
                                         style="background-image: url(assets/images/pattern/thm-pattern-1.png);"></div>
                                     <div class="inner-text">
-                                        <h6>Service 01</h6>
-                                        <h3><a href="services-details.html">Single Ply Roofing</a></h3>
+                                        <h6>Proyecto Banda Ancha</h6>
+                                        <h3><a href="services-details.html">PROYECTO DE BANDA ANCHA EN EL DISTRITO DEL MASERICHE</a></h3>
                                         <div class="text">
-                                            <p>Except too obtains some of advantages us ever...</p>
+                                            <p>Proyecto de banda ancha en el distrito del Maseriche, beneficios de los sistema...</p>
                                         </div>
                                     </div>
                                     <div class="button-box">
-                                        <a href="services-details.html">More Details</a>
+                                        <a href="services-details.html">Más Detalles</a>
                                     </div>
                                     <div class="icon">
                                         <span class="flaticon-roof"></span>
@@ -566,14 +566,14 @@
                                     <div class="pattern-bg"
                                         style="background-image: url(assets/images/pattern/thm-pattern-1.png);"></div>
                                     <div class="inner-text">
-                                        <h6>Service 02</h6>
-                                        <h3><a href="services-details.html">Modified Roofing</a></h3>
+                                        <h6>Proyuecto Viaje Seguro</h6>
+                                        <h3><a href="services-details.html">DRTC INICIA CAMPAÑA PARA UN VIAJE SEGURO EN EL TRANSPORTE FLUVIAL</a></h3>
                                         <div class="text">
-                                            <p>Except too obtains some of advantages us ever...</p>
+                                            <p>Con la finalidad de salvaguardad la salud e integridad de los pasajeros que usan el servic...</p>
                                         </div>
                                     </div>
                                     <div class="button-box">
-                                        <a href="services-details.html">More Details</a>
+                                        <a href="services-details.html">Más Detalles</a>
                                     </div>
                                     <div class="icon">
                                         <span class="flaticon-roof-1"></span>
@@ -594,14 +594,14 @@
                                     <div class="pattern-bg"
                                         style="background-image: url(assets/images/pattern/thm-pattern-1.png);"></div>
                                     <div class="inner-text">
-                                        <h6>Service 03</h6>
-                                        <h3><a href="services-details.html">Built-Up Roofing</a></h3>
+                                        <h6>Proyecto Transportes y Comunicaciones</h6>
+                                        <h3><a href="services-details.html">DRCT REALIZÓ OPERATIVO EN EL KM 26 DE LA CARRETERA IQUITOS – NAUTA</a></h3>
                                         <div class="text">
-                                            <p>Except too obtains some of advantages us ever...</p>
+                                            <p>Transporte y Comunicaciones, realizó un operativo en el km 26 de la carretera Iquitos – Nauta, a fin de det...</p>
                                         </div>
                                     </div>
                                     <div class="button-box">
-                                        <a href="services-details.html">More Details</a>
+                                        <a href="services-details.html">Más Detalles</a>
                                     </div>
                                     <div class="icon">
                                         <span class="flaticon-roof-2"></span>
@@ -616,10 +616,10 @@
                 <div class="row">
                     <div class="col-xl-12 text-center">
                         <div class="service-style1__bottom-text">
-                            <h3>Providing Roofing & Weather proofing Peace Of Mind, Start Here.</h3>
+                            <h3>Nuestros servicios a disposición del ciudadano.</h3>
                             <div class="btns-box">
                                 <a class="btn-one style2" href="contact.html">
-                                    <span class="txt">All Services</span>
+                                    <span class="txt">Todos los Servicios</span>
                                 </a>
                             </div>
                         </div>
