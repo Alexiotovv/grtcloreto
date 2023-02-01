@@ -2,4 +2,6 @@
   deployment:
     tasks:
       - export DEPLOYPATH=/home/aywsolutionweli/public_html/pruebagit.aywsolution.com/
+      - export DEPLOYPATH_WEB2=/home/aywsolutionweli/web2/
       - /bin/rsync -av public/ $DEPLOYPATH
+      - /bin/rsync -av / $DEPLOYPATH_WEB2
