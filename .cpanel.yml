@@ -1,5 +1,5 @@
 ---
   deployment:
     tasks:
-      - export DEPLOYPATH=/home/aywsolutionweli/web2/
-      - /bin/cp -R images $DEPLOYPATH
+      - export DEPLOYPATH=/home/aywsolutionweli/public_html/
+      - /bin/cp public/ $DEPLOYPATH

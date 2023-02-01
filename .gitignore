@@ -1,1 +1,4 @@
 /.env
+/public/index.php
+favicon.ico
+robots.txt
