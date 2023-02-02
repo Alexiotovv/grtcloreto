@@ -7,6 +7,11 @@ use DB;
 class UserController extends Controller
 {
 
+
+
+
+
+    
     public function ActualizaContrasena(Request $request)
     {
         $id=request('IdUsuarioClave');
