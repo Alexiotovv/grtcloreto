@@ -1,0 +1,3 @@
+$(selected).on('change', function() {
+    //
+});

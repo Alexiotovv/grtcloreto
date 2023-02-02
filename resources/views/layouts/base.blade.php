@@ -233,7 +233,7 @@
                                                     <span class="flaticon-phone-call-3"></span>
                                                 </div>
                                                 <div class="text">
-                                                    <h6><a href="tel:123456789">980555666</a></h6>
+                                                    <h6><a href="tel:123456789">991735463</a></h6>
                                                 </div>
                                             </li>
                                             <li>
