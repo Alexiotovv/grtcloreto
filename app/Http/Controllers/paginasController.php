@@ -13,6 +13,15 @@ class paginasController extends Controller
         return view('home');
     }
 
+    public function direcciones(Request $request)
+    {
+        return view('direcciones');
+    }
+
+    public function misionvision(Request $request)
+    {
+        return view('misionvision');
+    }
 
 
 }

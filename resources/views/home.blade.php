@@ -79,7 +79,7 @@
     </section>
     <!-- End Main Slider -->
 
-    <!--Start Service Style1 Area-->
+    <!--Start Service Style1 Area Los Proyectos o Actividades Realizados-->
     <section class="service-style1-area">
         <div class="pattern-bg" style="background-image: url(assets/images/pattern/thm-pattern-2.png);"></div>
         <div class="container">
@@ -193,9 +193,7 @@
     </section>
     <!--End Service Style1 Area-->
 
-
-
-    <!--Start Features Style1 Area-->
+    <!--Start Features Style1 Area Las Direcciones-->
     <section class="features-style1-area">
         <div class="pattern-bg" style="background-image: url(assets/images/pattern/thm-pattern-4.png);"></div>
         <div class="container features-box">
@@ -594,53 +592,7 @@
     </section>
     <!--End Project Style1 Area-->
 
-    <!--Start Video Gallery Style1 Area-->
-    <section class="video-gallery-style1-area">
-        <div class="video-gallery-style1-area__bg"
-            style="background-image: url(assets/images/resources/video-gallery-bg.jpg);"></div>
-        <div class="pattern-bg" style="background-image: url(assets/images/pattern/thm-pattern-5.png);"></div>
-        <div class="pattern-bg-2" style="background-image: url(assets/images/pattern/thm-pattern-5.png);"></div>
-        <div class="pattern-bg-3" style="background-image: url(assets/images/pattern/thm-pattern-5.png);"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="video-gallery-style1_content">
-                        <div class="inner-box">
-                            <div class="sec-title">
-                                <div class="sub-title">
-                                    <h6><span class="border-left"></span>Video Proof</h6>
-                                </div>
-                                <h2>Best of the<br> Best Award in Service</h2>
-                            </div>
-                            <div class="inner-content">
-                                <div class="text">
-                                    <p>Indignation and dislike men who are so beguiled demoralized by the charms of
-                                        pleasure of the moment.</p>
-                                </div>
-                                <ul>
-                                    <li>Roof of the Year</li>
-                                    <li>Fully supported metal</li>
-                                    <li>Reliable & Trustworthy</li>
-                                    <li>Dependable</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="video-gallery-style1__video-holder">
-                            <div class="icon wow zoomIn animated" data-wow-delay="300ms" data-wow-duration="1500ms">
-                                <a class="video-popup" title="Video Gallery"
-                                    href="https://www.youtube.com/watch?v=p25gICT63ek">
-                                    <span class="flaticon-play-button"></span>
-                                </a>
-                            </div>
-                            <h4>Flat Roof Installation</h4>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End Video Gallery Style1 Area-->
+    
 
     <!--Start Working process area -->
     <section class="working-process-area">

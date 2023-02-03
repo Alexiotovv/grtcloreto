@@ -9,6 +9,9 @@ Route::get('/', function () {
 });
 Route::get('/nosotros',[paginasController::class, 'nosotros'])->name('nosotros');
 Route::get('/home',[paginasController::class, 'home'])->name('home');
+Route::get('/direcciones',[paginasController::class, 'direcciones'])->name('direcciones');
+Route::get('/misionvision',[paginasController::class, 'misionvision'])->name('misionvision');
+
 /*Route::get('/cuadro', function () {
     return view('cuadro');
 });*/

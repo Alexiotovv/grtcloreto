@@ -234,7 +234,7 @@
                                                     <span class="flaticon-phone-call-3"></span>
                                                 </div>
                                                 <div class="text">
-                                                    <h6><a href="tel:123456789">980534198</a></h6>
+                                                    <h6><a href="tel:123456789">991735462</a></h6>
                                                 </div>
                                             </li>
                                             <li>
@@ -311,8 +311,8 @@
                                                     <li class="dropdown"><a href="#">Institución</a>
                                                         <ul>
                                                             <li><a href="{{route ('nosotros')}}">Nosotros</a></li>
-                                                            <li><a href="team.html">Direcciones</a></li>
-                                                            <li class="dropdown"><a href="#">Proyectos</a>
+                                                            <li><a href="{{route ('direcciones')}}">Direcciones</a></li>
+                                                            {{-- <li class="dropdown"><a href="#">Proyectos</a>
                                                                 <ul>
                                                                     <li><a href="projects.html">2 Columns Grid</a></li>
                                                                     <li><a href="projects-2.html">3 Columns Grid</a>
@@ -321,18 +321,16 @@
                                                                     <li><a href="projects-4.html">4 Columns Wide</a>
                                                                     <li><a href="projects-5.html">Masonry View</a>
                                                                 </ul>
-                                                            </li>
-                                                            <li><a href="faq.html">Misión</a></li>
-                                                            <li><a href="coming-soon.html">Visión</a></li>
-                                                            <li><a href="testimonials.html">Actualidad</a></li>
-                                                            <li><a href="error.html">404 Error page</a></li>
+                                                            </li> --}}
+                                                            <li><a href="{{route('misionvision')}}">Misión y Visión</a></li>
+                                                            {{-- <li><a href="testimonials.html">Actualidad</a></li>
+                                                            <li><a href="error.html">404 Error page</a></li> --}}
                                                         </ul>
                                                     </li>
-                                                    <li class="dropdown"><a href="#">Publicaciones</a>
-                                                        <ul>
-                                                            <li><a href="services.html">Our Services</a></li>
-                                                            <li><a href="service-details.html">Service Details</a></li>
-                                                        </ul>
+                                                    <li class="dropdown"><a href="{{route('publicaciones')}}">Publicaciones</a>
+                                                        {{-- <ul>
+                                                            <li><a href="services.html">Ultimas Noticias</a></li>
+                                                        </ul> --}}
                                                     </li>
                                                     <!-- <li class="dropdown"><a href="#">Blog</a>
                                                         <ul>
