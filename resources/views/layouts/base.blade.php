@@ -292,8 +292,8 @@
                                             <div class="collapse navbar-collapse show clearfix"
                                                 id="navbarSupportedContent">
                                                 <ul class="navigation clearfix">
-                                                    <li class="dropdown current"><a href="#">Inicio</a>
-                                                        <ul>
+                                                    <li class="dropdown current"><a href="https://grtcloreto.gob.pe">Inicio</a>
+                                                        {{-- <ul>
                                                             <li><a href="index-2.html">Home Page 01</a></li>
                                                             <li><a href="index-3.html">Home Page 02</a></li>
                                                             <li><a href="index-4.html">Home Page 03</a></li>
@@ -306,22 +306,31 @@
                                                                     </li>
                                                                 </ul>
                                                             </li>
-                                                        </ul>
+                                                        </ul> --}}
                                                     </li>
                                                     <li class="dropdown"><a href="#">Institución</a>
                                                         <ul>
                                                             <li><a href="{{route ('nosotros')}}">Nosotros</a></li>
                                                             <li><a href="{{route ('direcciones')}}">Direcciones</a></li>
-                                                            {{-- <li class="dropdown"><a href="#">Proyectos</a>
+                                                            <li class="dropdown"><a href="#">Servicios</a>
                                                                 <ul>
-                                                                    <li><a href="projects.html">2 Columns Grid</a></li>
-                                                                    <li><a href="projects-2.html">3 Columns Grid</a>
-                                                                    <li><a href="projects-3.html">3 Columns With
-                                                                            Title</a>
-                                                                    <li><a href="projects-4.html">4 Columns Wide</a>
-                                                                    <li><a href="projects-5.html">Masonry View</a>
+                                                                    <li><a target="_blank" href="http://aplicaciones04.regionloreto.gob.pe/sistematramitedocumentarioDRTC/">Mesa de Partes</a></li>
+                                                                    <li><a href="">Laboratorio y Estudios de Suelos</a><li>
+                                                                    <li>
+                                                                        <a href="#">Licencias</a>
+                                                                        <li><a href="files/Obtencion-Directa-A1.pdf">Obtención Directa A1</a></li>
+                                                                        <li><a target="_blank" href="assets/files/Revalidacion-A1.pdf">Revalidación A1</a></li>
+                                                                        <li><a target="_blank" href="assets/files/REVALIDACION-AIIA-AIIB-AIIIA-AIIIB-AIIIC.pdf">Revalidación AIIA</a></li>
+                                                                        <li><a target="_blank" href="assets/files/REVALIDACION-AIIA-AIIB-AIIIA-AIIIB-AIIIC.pdf">Revalidación AIIB</a></li>
+                                                                        <li><a target="_blank" href="assets/files/REVALIDACION-AIIA-AIIB-AIIIA-AIIIB-AIIIC.pdf">Revalidación AIIIA</a></li>
+                                                                        <li><a target="_blank" href="assets/files/REVALIDACION-AIIA-AIIB-AIIIA-AIIIB-AIIIC.pdf">Revalidación AIIIB</a></li>
+                                                                        <li><a target="_blank" href="assets/files/REVALIDACION-AIIA-AIIB-AIIIA-AIIIB-AIIIC.pdf">Revalidación AIIIc</a></li>
+                                                                        <li><a target="_blank" href="assets/files/REVALIDACION-AIIA-AIIB-AIIIA-AIIIB-AIIIC.pdf">Convocatorias</a></li>
+                                                                    </li>
+                                                                    
+                                                                    
                                                                 </ul>
-                                                            </li> --}}
+                                                            </li>
                                                             <li><a href="{{route('misionvision')}}">Misión y Visión</a></li>
                                                             {{-- <li><a href="testimonials.html">Actualidad</a></li>
                                                             <li><a href="error.html">404 Error page</a></li> --}}
@@ -332,15 +341,16 @@
                                                             <li><a href="services.html">Ultimas Noticias</a></li>
                                                         </ul> --}}
                                                     </li>
-                                                    <!-- <li class="dropdown"><a href="#">Blog</a>
+
+                                                    <li class="dropdown"><a href="#">Instrumentos de Gestión</a>
                                                         <ul>
-                                                            <li><a href="blog.html">Grid View</a></li>
-                                                            <li><a href="blog-2.html">List View</a></li>
-                                                            <li><a href="blog-3.html">Large Image</a></li>
-                                                            <li><a href="blog-single.html">Single Post</a></li>
+                                                            <li><a target="_blank" href="assets/files/MOF.pdf">MOF</a></li>
+                                                            <li><a target="_blank" href="assets/files/ROF">ROF</a></li>
+                                                            <li><a target="_blank" href="assets/files/TUPA">TUPA</a></li>
                                                         </ul>
                                                     </li>
-                                                    <li class="dropdown"><a href="#">Shop</a>
+
+                                                    {{-- <li class="dropdown"><a href="#">Shop</a>
                                                         <ul>
                                                             <li><a href="shop.html">Products</a></li>
                                                             <li><a href="shop-details.html">Product Details</a></li>
@@ -348,7 +358,8 @@
                                                             <li><a href="checkout.html">Checkout</a></li>
                                                             <li><a href="account.html">My Account</a></li>
                                                         </ul>
-                                                    </li> -->
+                                                    </li> --}}
+
                                                     <li><a href="contact.html">Contacto</a></li>
                                                 </ul>
                                             </div>
