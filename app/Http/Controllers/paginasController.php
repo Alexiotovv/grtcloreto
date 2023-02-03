@@ -22,6 +22,10 @@ class paginasController extends Controller
     {
         return view('misionvision');
     }
+    public function publicaciones(Request $request)
+    {
+        return view('publicaciones');
+    }
 
 
 }
