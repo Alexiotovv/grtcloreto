@@ -72,14 +72,14 @@
 
     <div class="boxed_wrapper ltr">
         <!-- Preloader -->
-        <div class="loader-wrap">
+        {{-- <div class="loader-wrap">
             <div class="preloader">
                 <div class="preloader-close">Preloader Close</div>
             </div>
             <div class="layer layer-one"><span class="overlay"></span></div>
             <div class="layer layer-two"><span class="overlay"></span></div>
             <div class="layer layer-three"><span class="overlay"></span></div>
-        </div>
+        </div> --}}
 
         <!-- page-direction -->
         <div class="page_direction">
@@ -90,7 +90,7 @@
 
 
         <!-- switcher menu -->
-        <div class="switcher">
+        {{-- <div class="switcher">
             <div class="switch_btn">
                 <button><img src="assets/images/icon/color-palette.png" alt="Color Palette"> </button>
             </div>
@@ -119,7 +119,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- end switcher menu -->
 
 
@@ -138,52 +138,50 @@
                                     <a href="index-2.html"><img src="assets/images/brand/logo_reduced.png" alt=""/></a>
                                 </div>
                                 <div class="content-box">
-                                    <h4>About Us</h4>
+                                    <h4>Contacto</h4>
                                     <div class="inner-text">
-                                        <p>With more than four decades of proven success in quality Rufers services,
-                                            Shelder Roofing and Retro-Fit group is a family-owned &operated business
-                                            serving.
+                                        <p>La Gerencia Regional de Transportes y Comunicaciones pone a su disposicón un formulario de contacto.
                                         </p>
                                     </div>
                                 </div>
 
                                 <div class="form-inner">
-                                    <h4>Get a free quote</h4>
+                                    <h4>Enviar Consulta</h4>
                                     <form action="https://mehedi.asiandevelopers.com/demo/rufers/index.html" method="post">
                                         <div class="form-group">
-                                            <input type="text" name="name" placeholder="Name" required="">
+                                            <input type="text" name="name" placeholder="Nombre" required="">
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" name="email" placeholder="Email" required="">
+                                            <input type="email" name="email" placeholder="Correo" required="">
                                         </div>
                                         <div class="form-group">
-                                            <textarea name="message" placeholder="Message..."></textarea>
+                                            <textarea name="message" placeholder="Mensaje..."></textarea>
                                         </div>
                                         <div class="form-group message-btn">
                                             <button type="submit" class="btn-one">
-                                                <span class="txt">Submit Now</span>
+                                                <span class="txt">Enviar</span>
                                             </button>
                                         </div>
                                     </form>
                                 </div>
 
                                 <div class="sidebar-contact-info">
-                                    <h4>Contact Info</h4>
+                                    <h4>Contacto</h4>
                                     <ul>
                                         <li>
-                                            <span class="flaticon-pin-1"></span> Chicago 12, Melborne City, USA
+                                            <span class="flaticon-pin-1"></span> Av. José Abelardo Quiñones Km. 3.5 – Villa San Juan | Iquitos – Perú
                                         </li>
                                         <li>
                                             <span class="flaticon-telephone"></span>
-                                            <a href="tel:+8801682648101">+88 01682648101</a>
+                                            <a href="tel:+8801682648101"> (065) 260990</a>
                                         </li>
                                         <li>
                                             <span class="flaticon-mail"></span>
-                                            <a href="mailto:info@example.com">info@example.com</a>
+                                            <a href="mailto:info@example.com">info@grtcloreto.gob.pe</a>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="thm-social-link1">
+                                {{-- <div class="thm-social-link1">
                                     <ul class="social-box">
                                         <li class="facebook">
                                             <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -198,7 +196,7 @@
                                             <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                                         </li>
                                     </ul>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -216,7 +214,7 @@
                 </div>
                 <!--Start Header Top-->
                 <div class="header-style-one__header-content">
-                    <div class="header-top" style="background:#292978">
+                    <div class="header-top">
                         <div class="auto-container">
                             <div class="outer-box">
 
@@ -234,7 +232,7 @@
                                                     <span class="flaticon-phone-call-3"></span>
                                                 </div>
                                                 <div class="text">
-                                                    <h6><a href="tel:123456789">991735462</a></h6>
+                                                    <h6><a href="tel:065-260990">065-260990</a></h6>
                                                 </div>
                                             </li>
                                             <li>
@@ -242,7 +240,16 @@
                                                     <span class="flaticon-email-1"></span>
                                                 </div>
                                                 <div class="text">
-                                                    <h6><a href="mailto:yourmail@email.com">info@grtcloreto.gob.pe</a></h6>
+                                                    <h6><a href="mailto:info@grtcloreto.gob.pe">info@grtcloreto.gob.pe</a></h6>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <span class="flaticon-search"></span>
+                                                </div>
+                                                <div class="text">
+                                                    <h6><a href="https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=18822#.Y90773bMLIU">
+                                                        Portal de Transparencias</a></h6>
                                                 </div>
                                             </li>
                                         </ul>
@@ -259,9 +266,9 @@
                                                 <li>
                                                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                                 </li>
-                                                <li>
+                                                {{-- <li>
                                                     <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                                </li>
+                                                </li> --}}
                                             </ul>
                                         </div>
                                     </div>
@@ -332,8 +339,6 @@
                                                                 </ul>
                                                             </li>
                                                             <li><a href="{{route('misionvision')}}">Misión y Visión</a></li>
-                                                            {{-- <li><a href="testimonials.html">Actualidad</a></li>
-                                                            <li><a href="error.html">404 Error page</a></li> --}}
                                                         </ul>
                                                     </li>
                                                     <li class="dropdown"><a href="{{route('publicaciones')}}">Publicaciones</a>
@@ -349,16 +354,6 @@
                                                             <li><a target="_blank" href="assets/files/TUPA">TUPA</a></li>
                                                         </ul>
                                                     </li>
-
-                                                    {{-- <li class="dropdown"><a href="#">Shop</a>
-                                                        <ul>
-                                                            <li><a href="shop.html">Products</a></li>
-                                                            <li><a href="shop-details.html">Product Details</a></li>
-                                                            <li><a href="cart.html">Shopping Cart</a></li>
-                                                            <li><a href="checkout.html">Checkout</a></li>
-                                                            <li><a href="account.html">My Account</a></li>
-                                                        </ul>
-                                                    </li> --}}
 
                                                     <li><a href="contact.html">Contacto</a></li>
                                                 </ul>
@@ -390,9 +385,7 @@
                                     <div class="side-content-button">
                                         <a class="navSidebar-button" href="#"><span class="flaticon-menu"></span></a>
                                     </div>
-
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -453,14 +446,14 @@
         <!--Start footer area -->
         <footer class="footer-area">
 
-            <div class="footer-top">
+            {{-- <div class="footer-top">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="footer-top__content">
                                 <div class="left-box">
                                     <div class="footer-logo">
-                                        <a href="https://mehedi.asiandevelopers.com/demo/rufers/index.html"><img src="https://mehedi.asiandevelopers.com/demo/rufers/assets/images/footer/footer-logo.png" alt=""></a>
+                                        <a href="#"><img src="https://mehedi.asiandevelopers.com/demo/rufers/assets/images/footer/footer-logo.png" alt=""></a>
                                     </div>
                                     <div class="title">
                                         <h3>Do You Have An Emergency?</h3>
@@ -468,18 +461,18 @@
                                     </div>
                                 </div>
                                 <div class="right-box">
-                                    <a class="btn-one one" href="https://mehedi.asiandevelopers.com/demo/rufers/contact.html">
-                                        <span class="txt">More Details</span>
+                                    <a class="btn-one one" href="#">
+                                        <span class="txt">Más Información</span>
                                     </a>
                                     <a class="btn-one two" href="tel:123456789">
-                                        <span class="flaticon-headphone"></span><span class="txt">+1800-12-3456</span>
+                                        <span class="flaticon-headphone"></span><span class="txt">065-260990</span>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
 
             <!--Start Footer-->
@@ -491,22 +484,21 @@
                         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.1s">
                             <div class="single-footer-widget marbtm50">
                                 <div class="title">
-                                    <h3>About Service</h3>
+                                    <h3>Nosotros</h3>
                                 </div>
                                 <div class="our-company-info">
                                     <div class="text-box">
-                                        <p>Rufers Roofing & Retro-Fit is a family owned, operated business serving the
-                                            greater Los Angeles area since 2000.</p>
+                                        <p>Siempre al servicio del ciudadano.</p>
                                     </div>
                                     <ul>
                                         <li>
-                                            <h6>We are Available</h6>
-                                            <p>Mon-Sat: 09.00 am to 6.30 pm</p>
+                                            <h6>Hoario de atención</h6>
+                                            <p>07:00 am - 04:00 pm</p>
                                         </li>
                                     </ul>
                                     <div class="btn-box">
                                         <a class="btn-one" href="https://mehedi.asiandevelopers.com/demo/rufers/projects.html">
-                                            <span class="txt">More Details</span>
+                                            <span class="txt">Contacto</span>
                                         </a>
                                     </div>
 
@@ -519,24 +511,23 @@
                         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.3s">
                             <div class="single-footer-widget marbtm50">
                                 <div class="title">
-                                    <h3>Useful Links</h3>
+                                    <h3>Datos</h3>
                                 </div>
                                 <div class="footer-widget-links">
                                     <ul class="pull-left left">
-                                        <li><a href="#">Services</a></li>
-                                        <li><a href="#">Projects</a></li>
-                                        <li><a href="#">Testimonials</a></li>
-                                        <li><a href="#">Updates</a></li>
-                                        <li><a href="#">Offers</a></li>
-                                        <li><a href="#">Estimation</a></li>
+                                        <li><h6>Dirección</h6>
+                                            <p>Av. José Abelardo Quiñones Km. 3.5 – <br>
+                                                Villa San Juan | Iquitos – Perú
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h6>Teléfono</h6>
+                                            <p> (065) 260990
+                                            </p>
+                                        </li>
+
                                     </ul>
-                                    <ul class="pull-left marleft-60">
-                                        <li><a href="#">FAQ’s</a></li>
-                                        <li><a href="#">Partners</a></li>
-                                        <li><a href="#">Local Offices</a></li>
-                                        <li><a href="#">Guarantee</a></li>
-                                        <li><a href="#">Sitemap</a></li>
-                                    </ul>
+
                                 </div>
                             </div>
                         </div>
@@ -546,18 +537,18 @@
                         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.5s">
                             <div class="single-footer-widget">
                                 <div class="title">
-                                    <h3>Make Contact</h3>
+                                    <h3>Contacto</h3>
                                 </div>
                                 <div class="footer-widget-contact-info">
                                     <ul>
                                         <li>
-                                            <h6>General Quries</h6>
-                                            <p>Phone: <a href="tel:123456789">+1 555-7890-123</a></p>
-                                            <p>Email: <a href="mailto:yourmail@email.com">example@rufers.com</a></p>
+                                            <h6>Datos</h6>
+                                            <p>Teléfono: <a href="tel:123456789">065-260990</a></p>
+                                            <p>Correo: <a href="mailto:yourmail@email.com">info@grtcloreto.gob.pe</a></p>
                                         </li>
                                         <li>
-                                            <h6>Office Location</h6>
-                                            <p>Boat House, 152/21 City Road<br> Hoxton N1 6NG, UK.</p>
+                                            <h6>Ubicación</h6>
+                                            <p>Av. José Abelardo Quiñones Km. 3.5 – Villa San Juan | Iquitos – Perú</p>
                                         </li>
                                     </ul>
                                     <div class="footer-social-link">
@@ -577,7 +568,7 @@
                         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.7s">
                             <div class="single-footer-widget pdtop50">
                                 <div class="title">
-                                    <h3>Popular Post</h3>
+                                    <h3>Importante</h3>
                                 </div>
                                 <ul class="widget-posts-box">
                                     <li>
@@ -590,8 +581,8 @@
                                                 </div>
                                             </div>
                                             <div class="title-box">
-                                                <p>20, Jul 2021</p>
-                                                <h4><a href="#">Protecting Your Roof<br> From Storm...</a></h4>
+                                                <p>4, Enero 2023</p>
+                                                <h4><a href="#">Nuevo procedimiento<br> Obtención de licencias...</a></h4>
                                             </div>
                                         </div>
                                     </li>
@@ -605,15 +596,15 @@
                                                 </div>
                                             </div>
                                             <div class="title-box">
-                                                <p>15, Jun 2021</p>
-                                                <h4><a href="#">How To Weather Proof<br> Your Roof This...</a></h4>
+                                                <p>15, Enero 2023</p>
+                                                <h4><a href="#">Licencias<br> observadas...</a></h4>
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
 
                                 <div class="widget-more-post-button">
-                                    <a class="btn-two" href="https://mehedi.asiandevelopers.com/demo/rufers/services-details.html">More Details</a>
+                                    <a class="btn-two" href="https://grtcloreto.gob.pe/publicaciones">Detalles</a>
                                 </div>
 
 
@@ -626,7 +617,7 @@
             </div>
             <!--End Footer-->
 
-            <div class="footer-bottom">
+            {{-- <div class="footer-bottom">
                 <div class="container">
                     <div class="bottom-inner">
                         <div class="copyright">
@@ -641,7 +632,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
         </footer>
         <!--End footer area-->

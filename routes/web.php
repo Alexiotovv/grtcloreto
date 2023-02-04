@@ -12,6 +12,7 @@ Route::get('/home',[paginasController::class, 'home'])->name('home');
 Route::get('/direcciones',[paginasController::class, 'direcciones'])->name('direcciones');
 Route::get('/misionvision',[paginasController::class, 'misionvision'])->name('misionvision');
 Route::get('/publicaciones',[paginasController::class, 'publicaciones'])->name('publicaciones');
+Route::get('/paneladmin',[paginasController::class, 'paneladmin'])->name('paneladmin');
 /*Route::get('/cuadro', function () {
     return view('cuadro');
 });*/

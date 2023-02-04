@@ -221,7 +221,7 @@
                             </div>
                         </div>
                         <div class="button-box">
-                            <a href="services-details.html"><span class="fa fa-angle-right"></span>Details</a>
+                            <a href="services-details.html"><span class="fa fa-angle-right"></span>Detalles</a>
                         </div>
                     </div>
                 </div>
@@ -249,7 +249,7 @@
                             </div>
                         </div>
                         <div class="button-box">
-                            <a href="services-details.html"><span class="fa fa-angle-right"></span>Details</a>
+                            <a href="services-details.html"><span class="fa fa-angle-right"></span>Detalles</a>
                         </div>
                     </div>
                 </div>
@@ -279,7 +279,7 @@
                             </div>
                         </div>
                         <div class="button-box">
-                            <a href="services-details.html"><span class="fa fa-angle-right"></span>Details</a>
+                            <a href="services-details.html"><span class="fa fa-angle-right"></span>Detalles</a>
                         </div>
                     </div>
                 </div>
@@ -316,7 +316,7 @@
             </div>
         </div>
 
-        <div class="fact-counter-box">
+        {{-- <div class="fact-counter-box">
             <div class="container">
                 <div class="sec-title center text-center">
                     <div class="sub-title">
@@ -411,13 +411,13 @@
                     <!--End Single Fact Counter-->
                 </div>
             </div>
-        </div>
+        </div> --}}
 
     </section>
     <!--End Features Style1 Area-->
 
     <!--Start Project Style1 Area-->
-    <section class="project-style1-area">
+    {{-- <section class="project-style1-area">
         <div class="container">
             <div class="project-top-title">
                 <div class="sec-title">
@@ -589,13 +589,13 @@
 
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--End Project Style1 Area-->
 
     
 
     <!--Start Working process area -->
-    <section class="working-process-area">
+    {{-- <section class="working-process-area">
         <div class="container">
             <div class="sec-title center text-center">
                 <div class="sub-title">
@@ -676,11 +676,11 @@
             </div>
 
         </div>
-    </section>
+    </section> --}}
     <!--End Working process area -->
 
     <!--Start Team Style1 Area-->
-    <section class="team-style1-area">
+    {{-- <section class="team-style1-area">
         <div class="pattern-bg" style="background-image: url(assets/images/pattern/thm-pattern-4.png);"></div>
         <div class="container">
             <div class="sec-title">
@@ -810,11 +810,11 @@
 
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--End Team Style1 Area-->
 
     <!--Start Testimonials Style1 area -->
-    <section class="testimonials-style1-area">
+    {{-- <section class="testimonials-style1-area">
         <div class="container">
             <div class="sec-title center text-center">
                 <div class="sub-title">
@@ -1076,11 +1076,11 @@
             </div>
 
         </div>
-    </section>
+    </section> --}}
     <!--End Testimonials Style1 area -->
 
     <!--Start Contact Info Style1 Area-->
-    <section class="contact-info-style1-area">
+    {{-- <section class="contact-info-style1-area">
         <div class="contact-info-area__bg"
             style="background-image: url(https://mehedi.asiandevelopers.com/demo/rufers/assets/images/parallax-background/contact-info-area__bg.jpg);"></div>
         <div class="container">
@@ -1106,7 +1106,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--End Contact Info Style1 Area-->
 
     <!--Start Blog Style1 Area-->
@@ -1115,13 +1115,13 @@
             <div class="blog-top-title">
                 <div class="sec-title">
                     <div class="sub-title">
-                        <h6><span class="border-left"></span>News & Updates</h6>
+                        <h6><span class="border-left"></span>Últimas Noticias</h6>
                     </div>
-                    <h2>Latest From Blog Post</h2>
+                    <h2>Últimas Publicaciones</h2>
                 </div>
                 <div class="blog-style1__button">
                     <a class="btn-one" href="https://mehedi.asiandevelopers.com/demo/rufers/blog.html">
-                        <span class="txt">All Post</span>
+                        <span class="txt">Todas las Publicaciones</span>
                     </a>
                 </div>
             </div>
@@ -1132,81 +1132,84 @@
                     <div class="single-blog-style1 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
                         <div class="img-holder">
                             <div class="inner">
-                                <img src="https://mehedi.asiandevelopers.com/demo/rufers/assets/images/blog/blog-v1-1.jpg" alt="">
+                                <img src="assets/images/blog/blog-v4-1.jpg" alt="">
                             </div>
                             <div class="categories-date-box">
                                 <div class="categories-box">
-                                    <h6><span class="flaticon-open-archive"></span>Maintenance</h6>
+                                    <h6><span class="flaticon-open-archive"></span>Ver Documento</h6>
                                 </div>
                                 <div class="date-box">
-                                    <h3>20<br><span>Jul</span></h3>
+                                    <h3>03<br><span>Feb</span></h3>
                                 </div>
                             </div>
                         </div>
+
                         <div class="text-holder">
                             <h3 class="blog-title">
-                                <a href="https://mehedi.asiandevelopers.com/demo/rufers/blog-single.html">Protecting Your Roof From Storm Damage</a>
+                                <a href="https://mehedi.asiandevelopers.com/demo/rufers/blog-single.html">Licencias entregadas</a>
                             </h3>
                             <div class="text">
-                                <p>Prevents our being able do what we like best every pleasure avoided...</p>
+                                <p>Licencias tramitadas a partir del...</p>
                             </div>
                             <div class="bottom-box">
                                 <div class="pattern-bg"
-                                    style="background-image: url(https://mehedi.asiandevelopers.com/demo/rufers/assets/images/pattern/thm-pattern-7.png);"></div>
+                                    style="background-image:assets/images/blog/blog-v4-1.jpg;"></div>
                                 <div class="left">
-                                    <a class="btn-two" href="https://mehedi.asiandevelopers.com/demo/rufers/blog-single.html">More Details</a>
+                                    <a class="btn-two" href="https://mehedi.asiandevelopers.com/demo/rufers/blog-single.html">Detalles</a>
                                 </div>
-                                <div class="right">
+                                {{-- <div class="right">
                                     <ul>
                                         <li><a href="#"><span class="fa fa-heart-o"></span>10</a></li>
                                         <li><a href="#"><span class="fa fa-share-alt share"></span></a></li>
                                     </ul>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--End Single blog Style1-->
+
                 <!--Start Single blog Style1-->
                 <div class="col-xl-4 col-lg-4">
                     <div class="single-blog-style1 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                         <div class="img-holder">
                             <div class="inner">
-                                <img src="https://mehedi.asiandevelopers.com/demo/rufers/assets/images/blog/blog-v1-2.jpg" alt="">
+                                <img src="assets/images/blog/blog-v4-2.jpg" alt="">
                             </div>
                             <div class="categories-date-box">
                                 <div class="categories-box">
-                                    <h6><span class="flaticon-open-archive"></span>Tips & Tricks</h6>
+                                    <h6><span class="flaticon-open-archive"></span>Ver Documento</h6>
                                 </div>
                                 <div class="date-box">
-                                    <h3>10<br><span>Jul</span></h3>
+                                    <h3>03<br><span>Feb</span></h3>
                                 </div>
                             </div>
                         </div>
                         <div class="text-holder">
                             <h3 class="blog-title">
-                                <a href="https://mehedi.asiandevelopers.com/demo/rufers/blog-single.html">How To Weather Proof Your Roof This Winter?</a>
+                                <a href="https://mehedi.asiandevelopers.com/demo/rufers/blog-single.html">DRTC INICIA CAMPAÑA PARA UN VIAJE SEGURO EN EL TRANSPORTE FLUVIAL</a>
                             </h3>
                             <div class="text">
-                                <p>Mistaken idea denouncing pleasure and praising pain was complete...</p>
+                                <p>Con la finalidad de salvaguardad la salud e integridad de los pasajeros que usan el servicio de ...</p>
                             </div>
                             <div class="bottom-box">
                                 <div class="pattern-bg"
-                                    style="background-image: url(https://mehedi.asiandevelopers.com/demo/rufers/assets/images/pattern/thm-pattern-7.png);"></div>
+                                    style="background-image: assets/images/pattern/blog-v4-2.jpg;"></div>
                                 <div class="left">
-                                    <a class="btn-two" href="https://mehedi.asiandevelopers.com/demo/rufers/blog-single.html">More Details</a>
+                                    <a class="btn-two" href="https://mehedi.asiandevelopers.com/demo/rufers/blog-single.html">Detalles</a>
                                 </div>
-                                <div class="right">
+                                {{-- <div class="right">
                                     <ul>
                                         <li><a href="#"><span class="fa fa-heart-o"></span>10</a></li>
                                         <li><a href="#"><span class="fa fa-share-alt share"></span></a></li>
                                     </ul>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--End Single blog Style1-->
+
                 <!--Start Single blog Style1-->
                 <div class="col-xl-4 col-lg-4">
                     <div class="single-blog-style1 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
@@ -1216,32 +1219,32 @@
                             </div>
                             <div class="categories-date-box">
                                 <div class="categories-box">
-                                    <h6><span class="flaticon-open-archive"></span>Roof Leaks</h6>
+                                    <h6><span class="flaticon-open-archive"></span>Ver Documento</h6>
                                 </div>
                                 <div class="date-box">
-                                    <h3>30<br><span>Jun</span></h3>
+                                    <h3>03<br><span>Feb</span></h3>
                                 </div>
                             </div>
                         </div>
                         <div class="text-holder">
                             <h3 class="blog-title">
-                                <a href="https://mehedi.asiandevelopers.com/demo/rufers/blog-single.html">The 5 Most Common Causes Of Roof Leaks</a>
+                                <a href="">Avenida principales...</a>
                             </h3>
                             <div class="text">
-                                <p>No one rejects dislikes or avoids pleasure itself because it is pleasure...</p>
+                                <p>DRCT REALIZÓ OPERATIVO EN EL KM 26 DE LA CARRETERA IQUITOS – NAUTA...</p>
                             </div>
                             <div class="bottom-box">
                                 <div class="pattern-bg"
-                                    style="background-image: url(https://mehedi.asiandevelopers.com/demo/rufers/assets/images/pattern/thm-pattern-7.png);"></div>
+                                    style="background-image: assets/images/blog/blog-v4-3.jpg;;"></div>
                                 <div class="left">
-                                    <a class="btn-two" href="https://mehedi.asiandevelopers.com/demo/rufers/blog-single.html">More Details</a>
+                                    <a class="btn-two" href="https://mehedi.asiandevelopers.com/demo/rufers/blog-single.html">Detalles</a>
                                 </div>
-                                <div class="right">
+                                {{-- <div class="right">
                                     <ul>
                                         <li><a href="#"><span class="fa fa-heart-o"></span>10</a></li>
                                         <li><a href="#"><span class="fa fa-share-alt share"></span></a></li>
                                     </ul>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
