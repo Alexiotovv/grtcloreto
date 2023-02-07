@@ -31,6 +31,7 @@ class paginasController extends Controller
     {
         // 'users' => DB::table('users')->paginate(15)
         $publicaciones=DB::table('publicaciones')
+        ->orderByDesc('publicaciones.id')
         ->paginate(5);
         // ->get();
         return view('publicaciones',compact('publicaciones'));

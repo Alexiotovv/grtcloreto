@@ -706,8 +706,8 @@
 
     <!-- thm custom script -->
     <script src="https://mehedi.asiandevelopers.com/demo/rufers/assets/js/custom.js"></script>
-
-
+    
+    @yield('js_files')
 
 </body>
 

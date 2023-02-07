@@ -1115,13 +1115,13 @@
             <div class="blog-top-title">
                 <div class="sec-title">
                     <div class="sub-title">
-                        <h6><span class="border-left"></span>Últimas Noticias</h6>
+                        <h6><span class="border-left"></span>Noticias</h6>
                     </div>
-                    <h2>Últimas Publicaciones</h2>
+                    <h2>Últimas Noticias</h2>
                 </div>
                 <div class="blog-style1__button">
-                    <a class="btn-one" href="https://mehedi.asiandevelopers.com/demo/rufers/blog.html">
-                        <span class="txt">Todas las Publicaciones</span>
+                    <a class="btn-one" href="">
+                        <span class="txt">Todas las Noticias</span>
                     </a>
                 </div>
             </div>
