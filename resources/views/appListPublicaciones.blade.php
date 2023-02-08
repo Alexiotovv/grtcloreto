@@ -34,7 +34,7 @@
                     <td>{{$pub->Titulo}}</td>
                     <td>{{$pub->Descripcion}}</td>
                     <td>{{$pub->Fecha}}</td>
-                    <td><a target="_blank" href="storage/{{$pub->Ruta}}">{{$pub->Ruta}}</a></td>
+                    <td><a target="_blank" href="/storage/{{$pub->Ruta}}">{{$pub->Ruta}}</a></td>
                     <td>{{$pub->Observaciones}}</td>
                 </tr>
             @endforeach
