@@ -28,8 +28,8 @@
                 <tr>
                     <td>{{$pub->id}}</td>
                     <td>
-                        <button class="btn btn-outline-danger btnEliminarPublicacion"><span class="">Eliminar</span></button>
-                        <button class="btn btn-outline-warning btnEditarPublicacion"><span class=""></span>Editar</button>
+                        <button class="btn btn-outline-danger btnEliminarPublicacion"><i class="lni lni-trash"></i></button>
+                        <button class="btn btn-outline-warning btnEditarPublicacion"><i class="lni lni-pencil"></i></button>
                     </td>
                     <td>{{$pub->Titulo}}</td>
                     <td>{{$pub->Descripcion}}</td>
@@ -55,31 +55,30 @@
           </div>
         
           <div class="modal-body">
-            <form id="formPublicar" action="{{route('Actualizar.Publicaciones')}}" method="POST"
-                        enctype="multipart/form-data">
+            <form id="formPublicar" action="{{route('Actualizar.Publicaciones')}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="row">
                     <div class="col-lg-4">
-                        <input type="text" id="idPublicacion" hidden>
+                        <input type="text" id="idPublicacion" name="idPublicacion" class="form form-control">
                         <label for="Titulo">Titulo</label>
-                        <input name="Titulo" id="Titulo" type="text" placeholder="Título" class="form-control" required>
+                        <input name="Titulo" id="Titulo" type="text" placeholder="Título" class="form form-control" required>
                     </div>
                     <div class="col-lg-8">
                         <label for="Descripcion">Descripcion</label>
-                        <input name="Descripcion" id="Descripcion" type="text" placeholder="Descripción" class="form-control" required>
+                        <input name="Descripcion" id="Descripcion" type="text" placeholder="Descripción" class="form form-control" required>
                     </div>
                     <div class="col-lg-4">
                         <label for="Fecha">Fecha</label>
-                        <input name="Fecha" id="Fecha" type="date" placeholder="Fecha" class="form-control" required>
+                        <input name="Fecha" id="Fecha" type="date" placeholder="Fecha" class="form form-control" required>
                     </div>
                     <div class="col-lg-8">
                         <label for="Archivo">Seleccione Archivo</label>
-                        <input type="file" class="form-control-file" id="Archivo" name="Archivo" required>
+                        <input type="file" class="form-control-file" id="Archivo" name="Archivo">
                     </div>
-                    <div class="col-lg-4">
+                    {{-- <div class="col-lg-4">
                         <label for="NombreDocumento">NombreDocumento</label>
                         <input name="NombreDocumento" id="NombreDocumento" type="text" placeholder="NombreDocumento" class="form-control" required>
-                    </div>
+                    </div> --}}
                     <div class="col-lg-8">
                         <label for="Observaciones">Observaciones</label>
                         <textarea name="Observaciones" id="Observaciones" cols="30" rows="2" 
@@ -93,16 +92,11 @@
                     </div>
                     
                 </div>
-
-                </div>
             </form>
         </div>
     </div>
   </div>
 </div>
-
-
-
-
 @endsection
+
 

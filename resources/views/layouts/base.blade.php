@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 
 <!-- Mirrored from mehedi.asiandevelopers.com/demo/rufers/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Jan 2023 20:11:13 GMT -->
@@ -55,11 +55,14 @@
     <link href="assets/css/color/theme-color.css" id="jssDefault" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <link href="assets/plugins/datatable/css/dataTables.bootstrap5.min.css" rel="stylesheet"/>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="32x32" href="assets/images/favicon/logo-favicon.png">
     <link rel="icon" type="image/png" href="assets/images/favicon/logo-favicon.png" sizes="32x32">
     <link rel="icon" type="image/png" href="assets/images/favicon/logo-favicon.png" sizes="16x16">
 
+    @yield('extra_css')
     <!-- Fixing Internet Explorer-->
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -69,6 +72,38 @@
 </head>
 
 <body>
+    
+{{-- Ventan Login --}}
+    <!-- Button trigger modal -->
+    
+    <form action="login" method="POST">@csrf
+        <!-- Modal -->
+        <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Inicie Sesión</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <label for="">Usuario</label>
+                    <input type="text" class="form form-control" name="name" id="name">
+                    <label for="">Contraseña</label>
+                    <input type="password" class="form form-control" name="password" id="password">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-primary">Ingresar</button>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </form>
+
+{{-- End Ventana Login --}}
 
     <div class="boxed_wrapper ltr">
         <!-- Preloader -->
@@ -179,6 +214,8 @@
                                             <span class="flaticon-mail"></span>
                                             <a href="mailto:info@example.com">info@grtcloreto.gob.pe</a>
                                         </li>
+                                        
+                                        
                                     </ul>
                                 </div>
                                 {{-- <div class="thm-social-link1">
@@ -319,6 +356,8 @@
                                                         <ul>
                                                             <li><a href="{{route ('nosotros')}}">Nosotros</a></li>
                                                             <li><a href="{{route ('direcciones')}}">Direcciones</a></li>
+                                                            <li><a href="{{route('publicaciones')}}">Publicaciones</a></li>
+                                                            
                                                             <li class="dropdown"><a href="#">Servicios</a>
                                                                 <ul>
                                                                     <li><a target="_blank" href="http://aplicaciones04.regionloreto.gob.pe/sistematramitedocumentarioDRTC/">Mesa de Partes</a></li>
@@ -341,11 +380,11 @@
                                                             <li><a href="{{route('misionvision')}}">Misión y Visión</a></li>
                                                         </ul>
                                                     </li>
-                                                    <li class="dropdown"><a href="{{route('publicaciones')}}">Publicaciones</a>
+                                                    {{-- <li class="dropdown"><a href="{{route('publicaciones')}}">Publicaciones</a> --}}
                                                         {{-- <ul>
                                                             <li><a href="services.html">Ultimas Noticias</a></li>
                                                         </ul> --}}
-                                                    </li>
+                                                    {{-- </li> --}}
 
                                                     <li class="dropdown"><a href="#">Instrumentos de Gestión</a>
                                                         <ul>
@@ -354,8 +393,22 @@
                                                             <li><a target="_blank" href="assets/files/TUPA">TUPA</a></li>
                                                         </ul>
                                                     </li>
-
-                                                    <li><a href="contact.html">Contacto</a></li>
+                                                    @if (Route::has('login'))
+                                                        @auth
+                                                            <li class="dropdown"><a href="#">Hola, {{ auth()->user()->name }}</a>
+                                                                <ul>
+                                                                    <li><a href="paneladmin">Panel Admin</a></li>
+                                                                    <form action="login" method="post">
+                                                                        @method('put')
+                                                                        @csrf
+                                                                        <li><button type="submit" href="javascript:;" style="padding-left: 30px;">
+                                                                            <span>Salir</span></button>
+                                                                        </li>
+                                                                    </form>
+                                                                </ul>
+                                                            </li>
+                                                        @endauth
+                                                    @endif
                                                 </ul>
                                             </div>
                                         </nav>
@@ -496,8 +549,13 @@
                                             <p>07:00 am - 04:00 pm</p>
                                         </li>
                                     </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="" data-toggle="modal" data-target="#Login">Login</a>
+                                        </li>
+                                    </ul>
                                     <div class="btn-box">
-                                        <a class="btn-one" href="https://mehedi.asiandevelopers.com/demo/rufers/projects.html">
+                                        <a class="btn-one" href="#">
                                             <span class="txt">Contacto</span>
                                         </a>
                                     </div>
@@ -707,7 +765,9 @@
     <!-- thm custom script -->
     <script src="https://mehedi.asiandevelopers.com/demo/rufers/assets/js/custom.js"></script>
     
-    @yield('js_files')
+    <script src="assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="assets/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
+    @yield('extra_js')
 
 </body>
 

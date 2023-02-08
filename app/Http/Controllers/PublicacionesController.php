@@ -34,40 +34,37 @@ class PublicacionesController extends Controller
         return view('appRegPublicaciones');
     }
     
-    public function Actualizar(Request $request)
+    public function ActualizarPublicaciones(Request $request)
     {
         $id=request('idPublicacion');
-
-        $obj=publicaciones::FindOrFail($id);
-
-        $file=request('Archivo');
-        $ruta="".time()."_".$file->getClientOriginalName();
-        // dd($file->getClientOriginalName());
+        $obj=publicaciones::findOrFail($id);
         if ($request->hasFile('Archivo')) {
+            $file=request('Archivo');
+            $ruta="".time()."_".$file->getClientOriginalName();
             $file->storeAs('public',time()."_".$file->getClientOriginalName());
-        }
-
-        $obj = new publicaciones();
+            $obj->Ruta = $ruta;
+        }else{
+           
+        };
+        
         $obj->Titulo = request('Titulo');
         $obj->Descripcion = request('Descripcion');
         $obj->Fecha = request('Fecha');
         $obj->Observaciones = request('Observaciones');
-        $obj->Ruta = $ruta;
         $obj->save();
-
         return redirect()->route('appList.Publicaciones');
     }
 
     public function create(Request $request)
     {
-        $file=request('Archivo');
-        $ruta="".time()."_".$file->getClientOriginalName();
         // dd($file->getClientOriginalName());
-        if ($request->hasFile('Archivo')) {
+        $obj = new publicaciones();
+        if ($request->hasFile('Archivo')){
+            $file=request('Archivo');
+            $ruta="".time()."_".$file->getClientOriginalName();
             $file->storeAs('public',time()."_".$file->getClientOriginalName());
         }
 
-        $obj = new publicaciones();
         $obj->Titulo = request('Titulo');
         $obj->Descripcion = request('Descripcion');
         $obj->Fecha = request('Fecha');
@@ -76,6 +73,7 @@ class PublicacionesController extends Controller
         $obj->save();
         return redirect()->route('appList.Publicaciones');
     }
+    
     public function ListarPublicaciones(Request $request)
     {
         $publicaciones=DB::table('publicaciones')

@@ -8,12 +8,11 @@ $(document).on("click",".btnEditarPublicacion",function (e){
         url: "EditarPublicaciones/"+id,
         dataType: "json",
         success: function (response) {
-
+            $("#idPublicacion").val(response[0].id);
             $("#Titulo").val(response[0].Titulo);
             $("#Descripcion").val(response[0].Descripcion);
             $("#Fecha").val(response[0].Fecha);
-            // $("#Archivo").val(response[0].NombreDocumento);
-            $("#NombreDocumento").val(response[0].NombreDocumento);
+            // $("#Archivo").val(response[0].NombreDocumento); 
             $("#Observaciones").val(response[0].Observaciones);
         }
     });

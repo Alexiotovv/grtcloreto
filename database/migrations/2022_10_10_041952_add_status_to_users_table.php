@@ -14,6 +14,8 @@ class AddStatusToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
+            $table->string('nombres', 100)->nullable()->default('');
+            $table->string('apellidos', 100)->nullable()->default('');
             $table->integer('status')->unsigned()->default(1);
         });
     }
@@ -26,7 +28,7 @@ class AddStatusToUsersTable extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('status');
+          
         });
     }
 }

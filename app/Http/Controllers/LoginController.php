@@ -18,6 +18,7 @@ class LoginController extends Controller
 
         if ($status) {
             if (Auth::attempt($credentials)) {
+                // dd("eureka");
                 $request->session()->regenerate();
                 return redirect()->intended('home');
             }
@@ -34,7 +35,7 @@ class LoginController extends Controller
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return redirect ('login');
+        return redirect ('home');
     }
     
 }

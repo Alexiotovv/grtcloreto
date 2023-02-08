@@ -10,8 +10,7 @@
 
 <br>
 
-    <form id="formPublicar" action="{{route('Create.Publicaciones')}}" method="POST"
-    enctype="multipart/form-data">
+    <form id="formPublicar" action="{{route('Create.Publicaciones')}}" method="POST" enctype="multipart/form-data">
       @csrf
       <div class="row">
         <div class="col-lg-4">
@@ -30,10 +29,10 @@
             <label for="Archivo">Seleccione Archivo</label>
             <input type="file" class="form-control-file" id="Archivo" name="Archivo" required>
           </div>
-          <div class="col-lg-4">
+          {{-- <div class="col-lg-4">
             <label for="NombreDocumento">NombreDocumento</label>
             <input name="NombreDocumento" id="NombreDocumento" type="text" placeholder="NombreDocumento" class="form-control" >
-          </div>
+          </div> --}}
           <div class="col-lg-8">
             <label for="Observaciones">Observaciones</label>
             <textarea name="Observaciones" id="Observaciones" cols="30" rows="2" 
@@ -50,16 +49,6 @@
         
       </div>
     
-    
-    
-    
-
-    
-    
-
-
-    
-
 
 
 
@@ -70,11 +59,9 @@
 
 
 @endsection
-@section('js_files')
+@section('extra_js')
   <script>
-
     var fecha = new Date();
     document.getElementById("Fecha").value = fecha.toJSON().slice(0, 10);
-  
   </script>
 @endsection
