@@ -34,7 +34,9 @@
                     <td>{{$pub->Titulo}}</td>
                     <td>{{$pub->Descripcion}}</td>
                     <td>{{$pub->Fecha}}</td>
-                    <td><a download="" href="/storage/{{$pub->Ruta}}">Descargar</a></td>
+                    <td>
+                        <a href="{{Storage::url($pub->Ruta)}}">{{$pub->Ruta}}</a>
+                    </td>
                     <td>{{$pub->Observaciones}}</td>
                 </tr>
             @endforeach

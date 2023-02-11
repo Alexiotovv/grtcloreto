@@ -45,7 +45,7 @@ class PublicacionesController extends Controller
             $obj->Ruta = $ruta;
         }else{
            
-        };
+        }
         
         $obj->Titulo = request('Titulo');
         $obj->Descripcion = request('Descripcion');
@@ -63,6 +63,7 @@ class PublicacionesController extends Controller
             $file=request('Archivo');
             $ruta="".time()."_".$file->getClientOriginalName();
             $file->storeAs('public',time()."_".$file->getClientOriginalName());
+            $obj->Ruta = $ruta;
         }
 
         $obj->Titulo = request('Titulo');
