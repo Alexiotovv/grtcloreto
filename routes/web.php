@@ -6,6 +6,11 @@ use App\Http\Controllers\PublicacionesController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserController;
 // use App\Http\Controllers\UserController;
+Route::get('/storage-link', function () {
+    $targetFolder = storage_path('app/public');
+    $linkFolder = $_SERVER['DOCUMENT_ROOT'].'/storage';
+    symlink($targetFolder,$linkFolder);
+});
 
 Route::get('/', function () {
     return view('home');
