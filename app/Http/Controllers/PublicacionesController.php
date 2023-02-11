@@ -82,34 +82,6 @@ class PublicacionesController extends Controller
         return view('appListPublicaciones', compact('publicaciones'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\publicaciones  $publicaciones
-     * @return \Illuminate\Http\Response
-     */
-    public function show(publicaciones $publicaciones)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\publicaciones  $publicaciones
-     * @return \Illuminate\Http\Response
-     */
     public function EditarPublicaciones($id)
     {
         $lista=DB::table('publicaciones')
