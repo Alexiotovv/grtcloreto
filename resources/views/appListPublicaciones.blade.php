@@ -35,7 +35,7 @@
                     <td>{{$pub->Descripcion}}</td>
                     <td>{{$pub->Fecha}}</td>
                     <td>
-                        <a href="{{Storage::url($pub->Ruta)}}">{{$pub->Ruta}}</a>
+                        <a download="" href="storage/{{$pub->Ruta}}">{{$pub->Ruta}}</a>
                     </td>
                     <td>{{$pub->Observaciones}}</td>
                 </tr>

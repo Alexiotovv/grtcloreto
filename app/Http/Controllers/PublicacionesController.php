@@ -34,6 +34,10 @@ class PublicacionesController extends Controller
         return view('appRegPublicaciones');
     }
     
+    public function DevuelveArchivo($NombreArchivo)
+    {
+        return Storage::download('/'.$NombreArchivo);
+    }
     public function ActualizarPublicaciones(Request $request)
     {
         $id=request('idPublicacion');

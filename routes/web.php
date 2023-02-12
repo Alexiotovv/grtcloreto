@@ -29,6 +29,8 @@ Route::get('register',function(){
 
 
 
+
+
 //Paginas
 Route::get('/nosotros',[paginasController::class, 'nosotros'])->name('nosotros');
 Route::get('/home',[paginasController::class, 'home'])->name('home');
@@ -45,6 +47,8 @@ Route::post('ActualizarPublicaciones',[PublicacionesController::class, 'Actualiz
 Route::get('EditarPublicaciones/{id}',[PublicacionesController::class, 'EditarPublicaciones'])->name('Editar.Publicaciones');
 Route::get('appListPublicaciones',[PublicacionesController::class, 'ListarPublicaciones'])->name('appList.Publicaciones');
 
+//DescargandoArchivos
+Route::get('storage/{NombreArchivo}',[PublicacionesController::class, 'DevuelveArchivo'])->name('storage');
 
 //USUARIOS
 Route::post("register",[UserController::class,'create'])->name('Registro');
