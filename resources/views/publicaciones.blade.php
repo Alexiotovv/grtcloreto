@@ -20,7 +20,7 @@
                         <td>{{$pub->Titulo}}</td>
                         <td>{{$pub->Descripcion}}</td>
                         <td>{{$pub->Fecha}}</td>
-                        <td><a href="storage/{{$pub->Ruta}}">Descargar</a></td>
+                        <td><a href="descargarfile/{{$pub->Ruta}}">{{$pub->Ruta}}</a></td>
                     </tr>
                 @endforeach
             </tbody>

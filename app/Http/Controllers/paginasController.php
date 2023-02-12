@@ -27,7 +27,7 @@ class paginasController extends Controller
     {
         return view('paneladmin');
     }
-    public function publicaciones(Request $request)
+    public function pagpublicaciones(Request $request)
     {
         // 'users' => DB::table('users')->paginate(15)
         $publicaciones=DB::table('publicaciones')

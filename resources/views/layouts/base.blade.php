@@ -356,7 +356,7 @@
                                                         <ul>
                                                             <li><a href="{{route ('nosotros')}}">Nosotros</a></li>
                                                             <li><a href="{{route ('direcciones')}}">Direcciones</a></li>
-                                                            <li><a href="{{route('publicaciones')}}">Publicaciones</a></li>
+                                                            <li><a href="{{route('pagpublicaciones')}}">Publicaciones</a></li>
                                                             
                                                             <li class="dropdown"><a href="#">Servicios</a>
                                                                 <ul>

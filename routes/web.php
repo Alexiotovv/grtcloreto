@@ -36,7 +36,7 @@ Route::get('/nosotros',[paginasController::class, 'nosotros'])->name('nosotros')
 Route::get('/home',[paginasController::class, 'home'])->name('home');
 Route::get('/direcciones',[paginasController::class, 'direcciones'])->name('direcciones');
 Route::get('/misionvision',[paginasController::class, 'misionvision'])->name('misionvision');
-Route::get('/publicaciones',[paginasController::class, 'publicaciones'])->name('publicaciones');
+Route::get('pagpublicaciones',[paginasController::class, 'pagpublicaciones'])->name('pagpublicaciones');
 Route::get('/paneladmin',[paginasController::class, 'paneladmin'])->name('paneladmin');
 //Apps
 // Route::get('/appPublicaciones',[PublicacionesController::class, 'index'])->name('appPublicaciones');

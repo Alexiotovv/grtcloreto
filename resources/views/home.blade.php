@@ -1146,7 +1146,7 @@
 
                         <div class="text-holder">
                             <h3 class="blog-title">
-                                <a href="https://mehedi.asiandevelopers.com/demo/rufers/blog-single.html">Licencias entregadas</a>
+                                <a href="#">Licencias entregadas</a>
                             </h3>
                             <div class="text">
                                 <p>Licencias tramitadas a partir del...</p>
@@ -1155,7 +1155,7 @@
                                 <div class="pattern-bg"
                                     style="background-image:assets/images/blog/blog-v4-1.jpg;"></div>
                                 <div class="left">
-                                    <a class="btn-two" href="https://mehedi.asiandevelopers.com/demo/rufers/blog-single.html">Detalles</a>
+                                    <a class="btn-two" href="#">Detalles</a>
                                 </div>
                                 {{-- <div class="right">
                                     <ul>
@@ -1187,7 +1187,7 @@
                         </div>
                         <div class="text-holder">
                             <h3 class="blog-title">
-                                <a href="https://mehedi.asiandevelopers.com/demo/rufers/blog-single.html">DRTC INICIA CAMPAÑA PARA UN VIAJE SEGURO EN EL TRANSPORTE FLUVIAL</a>
+                                <a href="#">DRTC INICIA CAMPAÑA PARA UN VIAJE SEGURO EN EL TRANSPORTE FLUVIAL</a>
                             </h3>
                             <div class="text">
                                 <p>Con la finalidad de salvaguardad la salud e integridad de los pasajeros que usan el servicio de ...</p>
@@ -1196,7 +1196,7 @@
                                 <div class="pattern-bg"
                                     style="background-image: assets/images/pattern/blog-v4-2.jpg;"></div>
                                 <div class="left">
-                                    <a class="btn-two" href="https://mehedi.asiandevelopers.com/demo/rufers/blog-single.html">Detalles</a>
+                                    <a class="btn-two" href="#">Detalles</a>
                                 </div>
                                 {{-- <div class="right">
                                     <ul>
@@ -1215,7 +1215,7 @@
                     <div class="single-blog-style1 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
                         <div class="img-holder">
                             <div class="inner">
-                                <img src="https://mehedi.asiandevelopers.com/demo/rufers/assets/images/blog/blog-v1-3.jpg" alt="">
+                                <img src="#" alt="">
                             </div>
                             <div class="categories-date-box">
                                 <div class="categories-box">
@@ -1237,7 +1237,7 @@
                                 <div class="pattern-bg"
                                     style="background-image: assets/images/blog/blog-v4-3.jpg;;"></div>
                                 <div class="left">
-                                    <a class="btn-two" href="https://mehedi.asiandevelopers.com/demo/rufers/blog-single.html">Detalles</a>
+                                    <a class="btn-two" href="#">Detalles</a>
                                 </div>
                                 {{-- <div class="right">
                                     <ul>
