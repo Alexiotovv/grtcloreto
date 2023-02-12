@@ -36,7 +36,7 @@ class PublicacionesController extends Controller
     
     public function DevuelveArchivo($NombreArchivo)
     {
-        return Storage::download('/'.$NombreArchivo);
+        return Storage::download('images/'.$NombreArchivo);
     }
     public function ActualizarPublicaciones(Request $request)
     {
@@ -45,7 +45,7 @@ class PublicacionesController extends Controller
         if ($request->hasFile('Archivo')) {
             $file=request('Archivo');
             $ruta="".time()."_".$file->getClientOriginalName();
-            $file->storeAs('public',time()."_".$file->getClientOriginalName());
+            $file->storeAs('images',time()."_".$file->getClientOriginalName());
             $obj->Ruta = $ruta;
         }else{
            
@@ -66,7 +66,7 @@ class PublicacionesController extends Controller
         if ($request->hasFile('Archivo')){
             $file=request('Archivo');
             $ruta="".time()."_".$file->getClientOriginalName();
-            $file->storeAs('public',time()."_".$file->getClientOriginalName());
+            $file->storeAs('images',time()."_".$file->getClientOriginalName());
             $obj->Ruta = $ruta;
         }
 

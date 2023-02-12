@@ -48,7 +48,7 @@ Route::get('EditarPublicaciones/{id}',[PublicacionesController::class, 'EditarPu
 Route::get('appListPublicaciones',[PublicacionesController::class, 'ListarPublicaciones'])->name('appList.Publicaciones');
 
 //DescargandoArchivos
-Route::get('storage/{NombreArchivo}',[PublicacionesController::class, 'DevuelveArchivo'])->name('storage');
+Route::get('descargarfile/{NombreArchivo}',[PublicacionesController::class, 'DevuelveArchivo'])->name('descargar.file');
 
 //USUARIOS
 Route::post("register",[UserController::class,'create'])->name('Registro');

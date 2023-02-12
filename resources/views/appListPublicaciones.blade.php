@@ -35,7 +35,7 @@
                     <td>{{$pub->Descripcion}}</td>
                     <td>{{$pub->Fecha}}</td>
                     <td>
-                        <a download="" href="storage/{{$pub->Ruta}}">{{$pub->Ruta}}</a>
+                        <a href="descargarfile/{{$pub->Ruta}}">{{$pub->Ruta}}</a>
                     </td>
                     <td>{{$pub->Observaciones}}</td>
                 </tr>
