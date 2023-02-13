@@ -38,6 +38,7 @@ class PublicacionesController extends Controller
     {
         return Storage::download('publicaciones/'.$NombreArchivo);
     }
+    
     public function ActualizarPublicaciones(Request $request)
     {
         $id=request('idPublicacion');
@@ -45,7 +46,7 @@ class PublicacionesController extends Controller
         if ($request->hasFile('Archivo')) {
             $file=request('Archivo');
             $ruta="".time()."_".$file->getClientOriginalName();
-            $file->storeAs('publicaciones',time()."_".$file->getClientOriginalName());
+            $file->storeAs('public/publicaciones/',time()."_".$file->getClientOriginalName());
             $obj->Ruta = $ruta;
         }else{
            
@@ -66,8 +67,9 @@ class PublicacionesController extends Controller
         if ($request->hasFile('Archivo')){
             $file=request('Archivo');
             $ruta="".time()."_".$file->getClientOriginalName();
-            $file->storeAs('publicaciones',time()."_".$file->getClientOriginalName());
+            $file->storeAs('public/publicaciones',time()."_".$file->getClientOriginalName());
             $obj->Ruta = $ruta;
+            // dd(asset('publicaciones/'.$ruta));
         }
 
         $obj->Titulo = request('Titulo');

@@ -35,7 +35,8 @@
                     <td>{{$pub->Descripcion}}</td>
                     <td>{{$pub->Fecha}}</td>
                     <td>
-                        <a href="descargarfile/{{$pub->Ruta}}">{{$pub->Ruta}}</a>
+                        <a href="{{asset('/storage/publicaciones/'.$pub->Ruta)}}">{{$pub->Ruta}}</a>
+                        {{-- <img src="{{asset('/storage/publicaciones/'.$pub->Ruta)}}" alt="imagen" style="width: 40px;heigth: 50px;"> --}}
                     </td>
                     <td>{{$pub->Observaciones}}</td>
                 </tr>
